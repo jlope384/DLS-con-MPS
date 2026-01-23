@@ -116,5 +116,32 @@
       <ref role="20lvS9" node="6FXX5uevABs" resolve="Shape" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6FXX5uevNIG">
+    <property role="EcuMT" value="7709586794018192300" />
+    <property role="TrG5h" value="Triangle" />
+    <property role="34LRSv" value="triangle" />
+    <property role="R4oN_" value="Triangle shape" />
+    <ref role="1TJDcQ" node="6FXX5uevABs" resolve="Shape" />
+    <node concept="1TJgyi" id="6FXX5uevNII" role="1TKVEl">
+      <property role="IQ2nx" value="7709586794018192302" />
+      <property role="TrG5h" value="xPosition" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6FXX5uevNIJ" role="1TKVEl">
+      <property role="IQ2nx" value="7709586794018192303" />
+      <property role="TrG5h" value="yPosition" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6FXX5uevNIK" role="1TKVEl">
+      <property role="IQ2nx" value="7709586794018192304" />
+      <property role="TrG5h" value="base" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="6FXX5uevNIL" role="1TKVEl">
+      <property role="IQ2nx" value="7709586794018192305" />
+      <property role="TrG5h" value="height" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
 </model>
 

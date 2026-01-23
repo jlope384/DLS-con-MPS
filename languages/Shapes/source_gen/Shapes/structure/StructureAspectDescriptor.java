@@ -17,6 +17,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
   /*package*/ final ConceptDescriptor myConceptCircle = createDescriptorForCircle();
   /*package*/ final ConceptDescriptor myConceptShape = createDescriptorForShape();
   /*package*/ final ConceptDescriptor myConceptSquare = createDescriptorForSquare();
+  /*package*/ final ConceptDescriptor myConceptTriangle = createDescriptorForTriangle();
   private final LanguageConceptSwitch myIndexSwitch;
 
   public StructureAspectDescriptor() {
@@ -31,7 +32,7 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
 
   @Override
   public Collection<ConceptDescriptor> getDescriptors() {
-    return Arrays.asList(myConceptCanvas, myConceptCircle, myConceptShape, myConceptSquare);
+    return Arrays.asList(myConceptCanvas, myConceptCircle, myConceptShape, myConceptSquare, myConceptTriangle);
   }
 
   @Override
@@ -46,6 +47,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
         return myConceptShape;
       case LanguageConceptSwitch.Square:
         return myConceptSquare;
+      case LanguageConceptSwitch.Triangle:
+        return myConceptTriangle;
       default:
         return null;
     }
@@ -98,6 +101,20 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.property("yPosition", 0x6afdf4578e7e69ebL).type(PrimitiveTypeId.INTEGER).origin("7709586794018138603").done();
     b.property("size", 0x6afdf4578e7e69ecL).type(PrimitiveTypeId.INTEGER).origin("7709586794018138604").done();
     b.alias("square");
+    return b.create();
+  }
+  private static ConceptDescriptor createDescriptorForTriangle() {
+    ConceptDescriptorBuilder2 b = new ConceptDescriptorBuilder2("Shapes", "Triangle", 0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7f3bacL);
+    b.class_(false, false, false);
+    // extends: Shapes.structure.Shape
+    b.super_(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69dcL);
+    b.origin("r:291bebe9-be25-4a24-b398-6267411dd1e4(Shapes.structure)/7709586794018192300");
+    b.version(3);
+    b.property("xPosition", 0x6afdf4578e7f3baeL).type(PrimitiveTypeId.INTEGER).origin("7709586794018192302").done();
+    b.property("yPosition", 0x6afdf4578e7f3bafL).type(PrimitiveTypeId.INTEGER).origin("7709586794018192303").done();
+    b.property("base", 0x6afdf4578e7f3bb0L).type(PrimitiveTypeId.INTEGER).origin("7709586794018192304").done();
+    b.property("height", 0x6afdf4578e7f3bb1L).type(PrimitiveTypeId.INTEGER).origin("7709586794018192305").done();
+    b.alias("triangle");
     return b.create();
   }
 }

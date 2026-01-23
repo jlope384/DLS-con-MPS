@@ -7,6 +7,11 @@
   <imports />
   <registry>
     <language id="959e7cc9-0538-4a6f-b1c6-8b569680b56c" name="Shapes">
+      <concept id="7709586794018138599" name="Shapes.structure.Square" flags="ng" index="3$wTQK">
+        <property id="7709586794018138604" name="size" index="3$wTQV" />
+        <property id="7709586794018138603" name="yPosition" index="3$wTQW" />
+        <property id="7709586794018138600" name="xPosition" index="3$wTQZ" />
+      </concept>
       <concept id="7709586794018138592" name="Shapes.structure.Circle" flags="ng" index="3$wTQR">
         <property id="7709586794018138596" name="radius" index="3$wTQN" />
         <property id="7709586794018138595" name="yPosition" index="3$wTQO" />
@@ -28,6 +33,11 @@
       <property role="3$wTQP" value="0" />
       <property role="3$wTQO" value="0" />
       <property role="3$wTQN" value="6" />
+    </node>
+    <node concept="3$wTQK" id="6FXX5uew2jB" role="3$wTQy">
+      <property role="3$wTQZ" value="0" />
+      <property role="3$wTQW" value="0" />
+      <property role="3$wTQV" value="4" />
     </node>
   </node>
 </model>
