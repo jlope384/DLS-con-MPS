@@ -120,5 +120,38 @@
       <node concept="l2Vlx" id="6FXX5uevNJR" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="6FXX5uew2jD">
+    <ref role="1XX52x" to="5rgu:6FXX5uevNIG" resolve="Triangle" />
+    <node concept="3EZMnI" id="6FXX5uew2jM" role="2wV5jI">
+      <node concept="3F0ifn" id="6FXX5uew2jT" role="3EZMnx">
+        <property role="3F0ifm" value="triangle" />
+      </node>
+      <node concept="3F0ifn" id="6FXX5uew2jY" role="3EZMnx">
+        <property role="3F0ifm" value="x:" />
+      </node>
+      <node concept="3F0A7n" id="6FXX5uew2k3" role="3EZMnx">
+        <ref role="1NtTu8" to="5rgu:6FXX5uevNII" resolve="xPosition" />
+      </node>
+      <node concept="3F0ifn" id="6FXX5uew2k6" role="3EZMnx">
+        <property role="3F0ifm" value="y:" />
+      </node>
+      <node concept="3F0A7n" id="6FXX5uew2kb" role="3EZMnx">
+        <ref role="1NtTu8" to="5rgu:6FXX5uevNIJ" resolve="yPosition" />
+      </node>
+      <node concept="3F0ifn" id="6FXX5uew2kj" role="3EZMnx">
+        <property role="3F0ifm" value="base:" />
+      </node>
+      <node concept="3F0A7n" id="6FXX5uew2kn" role="3EZMnx">
+        <ref role="1NtTu8" to="5rgu:6FXX5uevNIK" resolve="base" />
+      </node>
+      <node concept="3F0ifn" id="6FXX5uew2ks" role="3EZMnx">
+        <property role="3F0ifm" value="height:" />
+      </node>
+      <node concept="3F0A7n" id="6FXX5uew2kx" role="3EZMnx">
+        <ref role="1NtTu8" to="5rgu:6FXX5uevNIL" resolve="height" />
+      </node>
+      <node concept="l2Vlx" id="6FXX5uew2jP" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

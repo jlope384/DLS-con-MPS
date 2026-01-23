@@ -7,6 +7,12 @@
   <imports />
   <registry>
     <language id="959e7cc9-0538-4a6f-b1c6-8b569680b56c" name="Shapes">
+      <concept id="7709586794018192300" name="Shapes.structure.Triangle" flags="ng" index="3$wGZV">
+        <property id="7709586794018192305" name="height" index="3$wGZA" />
+        <property id="7709586794018192304" name="base" index="3$wGZB" />
+        <property id="7709586794018192303" name="yPosition" index="3$wGZS" />
+        <property id="7709586794018192302" name="xPosition" index="3$wGZT" />
+      </concept>
       <concept id="7709586794018138599" name="Shapes.structure.Square" flags="ng" index="3$wTQK">
         <property id="7709586794018138604" name="size" index="3$wTQV" />
         <property id="7709586794018138603" name="yPosition" index="3$wTQW" />
@@ -35,9 +41,15 @@
       <property role="3$wTQN" value="6" />
     </node>
     <node concept="3$wTQK" id="6FXX5uew2jB" role="3$wTQy">
-      <property role="3$wTQZ" value="0" />
-      <property role="3$wTQW" value="0" />
+      <property role="3$wTQZ" value="30" />
+      <property role="3$wTQW" value="30" />
       <property role="3$wTQV" value="4" />
+    </node>
+    <node concept="3$wGZV" id="6FXX5uewbqk" role="3$wTQy">
+      <property role="3$wGZT" value="-10" />
+      <property role="3$wGZS" value="-10" />
+      <property role="3$wGZB" value="6" />
+      <property role="3$wGZA" value="6" />
     </node>
   </node>
 </model>

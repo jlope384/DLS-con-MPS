@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<product version="3" modelHash="-1ejqvt0grs60mggz3yejfxq3t3hbr6c">
-  <files names="Canvas_Editor.java:Canvas_EditorBuilder_a.java:Circle_Editor.java:Circle_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Square_Editor.java:Square_EditorBuilder_a.java" />
+<product version="3" modelHash="-e758q3t591ttykn2m58uddg892uiqkd">
+  <files names="Canvas_Editor.java:Canvas_EditorBuilder_a.java:Circle_Editor.java:Circle_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:Square_Editor.java:Square_EditorBuilder_a.java:Triangle_Editor.java:Triangle_EditorBuilder_a.java" />
 </product>
 
