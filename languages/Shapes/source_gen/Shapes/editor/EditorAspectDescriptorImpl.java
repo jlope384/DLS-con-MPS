@@ -8,6 +8,8 @@ import java.util.Collection;
 import jetbrains.mps.openapi.editor.descriptor.ConceptEditor;
 import org.jetbrains.mps.openapi.language.SAbstractConcept;
 import java.util.Collections;
+import jetbrains.mps.openapi.editor.descriptor.ConceptEditorComponent;
+import jetbrains.mps.openapi.editor.descriptor.SubstituteMenu;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndex;
 import jetbrains.mps.lang.smodel.ConceptSwitchIndexBuilder;
 import jetbrains.mps.smodel.adapter.ids.MetaIdFactory;
@@ -22,15 +24,48 @@ public class EditorAspectDescriptorImpl extends EditorAspectDescriptorBase {
       case 1:
         return Collections.<ConceptEditor>singletonList(new Circle_Editor());
       case 2:
-        return Collections.<ConceptEditor>singletonList(new Square_Editor());
+        return Collections.<ConceptEditor>singletonList(new Color_Editor());
       case 3:
+        return Collections.<ConceptEditor>singletonList(new ColorReference_Editor());
+      case 4:
+        return Collections.<ConceptEditor>singletonList(new Square_Editor());
+      case 5:
         return Collections.<ConceptEditor>singletonList(new Triangle_Editor());
       default:
     }
     return Collections.<ConceptEditor>emptyList();
   }
+  private Collection<ConceptEditorComponent> getDeclaredEC_0(String editorComponentId) {
+    if ("Shapes.editor.ShapeColor".equals(editorComponentId)) {
+      return Collections.singletonList(new ShapeColor());
+    }
+    return Collections.emptyList();
+  }
+  @NotNull
+  public Collection<ConceptEditorComponent> getDeclaredEditorComponents(SAbstractConcept concept, String editorComponentId) {
+    SAbstractConcept cncpt = ((SAbstractConcept) concept);
+    switch (conceptIndex1.index(cncpt)) {
+      case 0:
+        return getDeclaredEC_0(editorComponentId);
+      default:
+    }
+    return Collections.emptyList();
+  }
 
 
+  @NotNull
+  @Override
+  public Collection<SubstituteMenu> getDeclaredDefaultSubstituteMenus(SAbstractConcept concept) {
+    SAbstractConcept cncpt = concept;
+    switch (conceptIndex2.index(cncpt)) {
+      case 0:
+        return Collections.<SubstituteMenu>singletonList(new ColorReference_SubstituteMenu());
+      default:
+    }
+    return Collections.<SubstituteMenu>emptyList();
+  }
 
-  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69eeL), MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69e0L), MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69e7L), MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7f3bacL)).seal();
+  private static final ConceptSwitchIndex conceptIndex = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69eeL), MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69e0L), MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6f9cde3466746208L), MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6f9cde3466788832L), MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69e7L), MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7f3bacL)).seal();
+  private static final ConceptSwitchIndex conceptIndex1 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69dcL)).seal();
+  private static final ConceptSwitchIndex conceptIndex2 = new ConceptSwitchIndexBuilder().put(MetaIdFactory.conceptId(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6f9cde3466788832L)).seal();
 }

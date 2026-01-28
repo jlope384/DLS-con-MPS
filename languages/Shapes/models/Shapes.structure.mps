@@ -48,6 +48,12 @@
     <property role="TrG5h" value="Shape" />
     <property role="R5$K7" value="true" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6YsRzhAu8x0" role="1TKVEi">
+      <property role="IQ2ns" value="8042547351215704128" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="color" />
+      <ref role="20lvS9" node="6YsRzhAu8wM" resolve="ColorReference" />
+    </node>
   </node>
   <node concept="1TIwiD" id="6FXX5uevABw">
     <property role="EcuMT" value="7709586794018138592" />
@@ -136,6 +142,27 @@
       <property role="IQ2nx" value="7709586794018192305" />
       <property role="TrG5h" value="height" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6YsRzhAt688">
+    <property role="EcuMT" value="8042547351215432200" />
+    <property role="TrG5h" value="Color" />
+    <property role="34LRSv" value="color" />
+    <property role="19KtqR" value="true" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6YsRzhAt68f" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6YsRzhAu8wM">
+    <property role="EcuMT" value="8042547351215704114" />
+    <property role="TrG5h" value="ColorReference" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6YsRzhAu8wN" role="1TKVEi">
+      <property role="IQ2ns" value="8042547351215704115" />
+      <property role="20kJfa" value="target" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6YsRzhAt688" resolve="Color" />
     </node>
   </node>
 </model>

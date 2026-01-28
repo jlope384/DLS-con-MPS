@@ -10,7 +10,9 @@
       <classes generated="true" path="${module}/classes_gen" />
     </facet>
   </facets>
-  <accessoryModels />
+  <accessoryModels>
+    <model modelUID="r:2a887f0a-3a98-4990-a7cf-f9661a2bdb37(Shapes.color)" />
+  </accessoryModels>
   <generators>
     <generator alias="main" namespace="Shapes.generator" uuid="f152d535-22ca-4dbc-9c32-294f23fe343a">
       <models>
@@ -54,6 +56,9 @@
       <mapping-priorities />
     </generator>
   </generators>
+  <dependencies>
+    <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
+  </dependencies>
   <languageVersions>
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="12" />
     <language slang="l:443f4c36-fcf5-4eb6-9500-8d06ed259e3e:jetbrains.mps.baseLanguage.classifiers" version="0" />
