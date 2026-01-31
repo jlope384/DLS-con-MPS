@@ -67,7 +67,6 @@
   </generators>
   <dependencies>
     <dependency reexport="false">2d3c70e9-aab2-4870-8d8d-6036800e4103(jetbrains.mps.kernel)</dependency>
-    <dependency reexport="false">6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:959e7cc9-0538-4a6f-b1c6-8b569680b56c:Shapes" version="0" />
