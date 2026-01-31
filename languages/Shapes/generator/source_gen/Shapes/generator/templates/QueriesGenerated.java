@@ -8,6 +8,7 @@ import jetbrains.mps.generator.template.PropertyMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations;
 import jetbrains.mps.generator.template.ReferenceMacroContext;
 import jetbrains.mps.lang.smodel.generator.smodelAdapter.SLinkOperations;
+import jetbrains.mps.lang.smodel.generator.smodelAdapter.SNodeOperations;
 import org.jetbrains.mps.openapi.model.SNode;
 import jetbrains.mps.generator.template.SourceSubstituteMacroNodesContext;
 import java.util.Map;
@@ -25,6 +26,7 @@ import org.jetbrains.annotations.Nullable;
 import jetbrains.mps.generator.impl.query.ReferenceTargetQuery;
 import org.jetbrains.mps.openapi.language.SContainmentLink;
 import org.jetbrains.mps.openapi.language.SReferenceLink;
+import org.jetbrains.mps.openapi.language.SConcept;
 
 @Generated
 public class QueriesGenerated extends QueryProviderBase {
@@ -83,7 +85,13 @@ public class QueriesGenerated extends QueryProviderBase {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.color$sCxh), LINKS.target$YeOr), PROPS.name$MnvL);
   }
   public static Object referenceMacro_GetReferent_3_0(final ReferenceMacroContext _context) {
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Canvas$f7), "graphicParam");
+  }
+  public static Object referenceMacro_GetReferent_3_1(final ReferenceMacroContext _context) {
     return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.color$sCxh), LINKS.target$YeOr), PROPS.name$MnvL);
+  }
+  public static Object referenceMacro_GetReferent_3_2(final ReferenceMacroContext _context) {
+    return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Canvas$f7), "graphicParam");
   }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.shapes$9Swm);
@@ -189,7 +197,9 @@ public class QueriesGenerated extends QueryProviderBase {
   private final Map<String, ReferenceTargetQuery> rtqMethods = new HashMap<String, ReferenceTargetQuery>();
   {
     rtqMethods.put("7716362970054648113", new RTQ(0, "red"));
-    rtqMethods.put("7716362970055158101", new RTQ(1, "red"));
+    rtqMethods.put("7296792124230788040", new RTQ(1, "graphics"));
+    rtqMethods.put("7716362970055158101", new RTQ(2, "red"));
+    rtqMethods.put("7296792124230788679", new RTQ(3, "graphics"));
   }
   @NotNull
   @Override
@@ -210,6 +220,10 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.referenceMacro_GetReferent_2_0(ctx);
         case 1:
           return QueriesGenerated.referenceMacro_GetReferent_3_0(ctx);
+        case 2:
+          return QueriesGenerated.referenceMacro_GetReferent_3_1(ctx);
+        case 3:
+          return QueriesGenerated.referenceMacro_GetReferent_3_2(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
@@ -234,5 +248,9 @@ public class QueriesGenerated extends QueryProviderBase {
     /*package*/ static final SContainmentLink color$sCxh = MetaAdapterFactory.getContainmentLink(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69dcL, 0x6f9cde3466788840L, "color");
     /*package*/ static final SReferenceLink target$YeOr = MetaAdapterFactory.getReferenceLink(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6f9cde3466788832L, 0x6f9cde3466788833L, "target");
     /*package*/ static final SContainmentLink shapes$9Swm = MetaAdapterFactory.getContainmentLink(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69eeL, 0x6afdf4578e7e69f5L, "shapes");
+  }
+
+  private static final class CONCEPTS {
+    /*package*/ static final SConcept Canvas$f7 = MetaAdapterFactory.getConcept(0x959e7cc905384a6fL, 0xb1c68b569680b56cL, 0x6afdf4578e7e69eeL, "Shapes.structure.Canvas");
   }
 }
