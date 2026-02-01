@@ -44,28 +44,28 @@
   <node concept="3$wTQT" id="6FXX5uevMYS">
     <property role="TrG5h" value="MyCanvas" />
     <node concept="3$wTQR" id="6FXX5uevMYT" role="3$wTQy">
-      <property role="3$wTQP" value="0" />
-      <property role="3$wTQO" value="0" />
-      <property role="3$wTQN" value="6" />
+      <property role="3$wTQP" value="10" />
+      <property role="3$wTQO" value="10" />
+      <property role="3$wTQN" value="80" />
       <node concept="9T5o6" id="6YsRzhAuRFf" role="9T5pO">
-        <ref role="9T5o7" to="gjwr:6YsRzhAtOWq" resolve="black" />
+        <ref role="9T5o7" to="gjwr:6YsRzhAtOWx" resolve="green" />
       </node>
     </node>
     <node concept="3$wTQK" id="6FXX5uew2jB" role="3$wTQy">
-      <property role="3$wTQZ" value="30" />
+      <property role="3$wTQZ" value="70" />
       <property role="3$wTQW" value="30" />
-      <property role="3$wTQV" value="4" />
+      <property role="3$wTQV" value="100" />
       <node concept="9T5o6" id="6YsRzhAv6iE" role="9T5pO">
         <ref role="9T5o7" to="gjwr:6YsRzhAtOWt" resolve="blue" />
       </node>
     </node>
     <node concept="3$wGZV" id="6FXX5uewbqk" role="3$wTQy">
-      <property role="3$wGZT" value="-10" />
-      <property role="3$wGZS" value="-10" />
-      <property role="3$wGZB" value="6" />
-      <property role="3$wGZA" value="6" />
+      <property role="3$wGZT" value="50" />
+      <property role="3$wGZS" value="50" />
+      <property role="3$wGZB" value="60" />
+      <property role="3$wGZA" value="60" />
       <node concept="9T5o6" id="6YsRzhAv6iF" role="9T5pO">
-        <ref role="9T5o7" to="gjwr:6YsRzhAtOWv" resolve="cyan" />
+        <ref role="9T5o7" to="gjwr:6YsRzhAtOWz" resolve="red" />
       </node>
     </node>
   </node>

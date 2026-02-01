@@ -13,13 +13,14 @@ public class MyCanvas extends JFrame {
     @Override
     protected void paintComponent(Graphics graphics) {
       super.paintComponent(graphics);
-      graphics.setColor(Color.black);
-      graphics.drawOval(0, 0, 6, 6);
+      graphics.setColor(Color.green);
+      graphics.drawOval(10, 10, 80, 80);
       graphics.setColor(Color.blue);
-      graphics.drawRect(30, 30, 4, 4);
+      graphics.drawRect(70, 30, 100, 100);
       {
-        int[] xPoints = {-10, -13, -7};
-        int[] yPoints = {-10, -4, -4};
+        graphics.setColor(Color.red);
+        int[] xPoints = {50, 20, 80};
+        int[] yPoints = {50, 110, 110};
 
         graphics.fillPolygon(xPoints, yPoints, 3);
       }

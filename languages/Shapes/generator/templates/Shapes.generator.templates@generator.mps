@@ -861,6 +861,46 @@
         </node>
         <node concept="9aQIb" id="6Gm1NNW7XmQ" role="3cqZAp">
           <node concept="3clFbS" id="6Gm1NNW7XmS" role="9aQI4">
+            <node concept="3clFbF" id="1FgWxnrqIN5" role="3cqZAp">
+              <node concept="2OqwBi" id="1FgWxnrqJf$" role="3clFbG">
+                <node concept="37vLTw" id="1FgWxnrqIN3" role="2Oq$k0">
+                  <ref role="3cqZAo" node="6Gm1NNW7S2b" resolve="graphics" />
+                </node>
+                <node concept="liA8E" id="1FgWxnrqJub" role="2OqNvi">
+                  <ref role="37wK5l" to="z60i:~Graphics.setColor(java.awt.Color)" resolve="setColor" />
+                  <node concept="10M0yZ" id="1FgWxnrqJy5" role="37wK5m">
+                    <ref role="3cqZAo" to="z60i:~Color.red" resolve="red" />
+                    <ref role="1PxDUh" to="z60i:~Color" resolve="Color" />
+                    <node concept="1ZhdrF" id="1FgWxnrqJHw" role="lGtFl">
+                      <property role="2qtEX8" value="variableDeclaration" />
+                      <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068498886296/1068581517664" />
+                      <node concept="3$xsQk" id="1FgWxnrqJHx" role="3$ytzL">
+                        <node concept="3clFbS" id="1FgWxnrqJHy" role="2VODD2">
+                          <node concept="3cpWs6" id="1FgWxnrqJL7" role="3cqZAp">
+                            <node concept="2OqwBi" id="1FgWxnrqNIa" role="3cqZAk">
+                              <node concept="2OqwBi" id="1FgWxnrqMXP" role="2Oq$k0">
+                                <node concept="2OqwBi" id="1FgWxnrqKDZ" role="2Oq$k0">
+                                  <node concept="30H73N" id="1FgWxnrqKoW" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="1FgWxnrqMCz" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="5rgu:6YsRzhAu8x0" resolve="color" />
+                                  </node>
+                                </node>
+                                <node concept="3TrEf2" id="1FgWxnrqNkZ" role="2OqNvi">
+                                  <ref role="3Tt5mk" to="5rgu:6YsRzhAu8wN" resolve="target" />
+                                </node>
+                              </node>
+                              <node concept="3TrcHB" id="1FgWxnrqO8J" role="2OqNvi">
+                                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="3cpWs8" id="6Gm1NNW7Tao" role="3cqZAp">
               <node concept="3cpWsn" id="6Gm1NNW7Tar" role="3cpWs9">
                 <property role="TrG5h" value="xPoints" />

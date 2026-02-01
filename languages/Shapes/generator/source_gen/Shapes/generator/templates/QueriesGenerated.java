@@ -93,6 +93,9 @@ public class QueriesGenerated extends QueryProviderBase {
   public static Object referenceMacro_GetReferent_3_2(final ReferenceMacroContext _context) {
     return _context.getOutputNodeByInputNodeAndMappingLabel(SNodeOperations.cast(SNodeOperations.getParent(_context.getNode()), CONCEPTS.Canvas$f7), "graphicParam");
   }
+  public static Object referenceMacro_GetReferent_4_0(final ReferenceMacroContext _context) {
+    return SPropertyOperations.getString(SLinkOperations.getTarget(SLinkOperations.getTarget(_context.getNode(), LINKS.color$sCxh), LINKS.target$YeOr), PROPS.name$MnvL);
+  }
   public static Iterable<SNode> sourceNodesQuery_1_0(final SourceSubstituteMacroNodesContext _context) {
     return SLinkOperations.getChildren(_context.getNode(), LINKS.shapes$9Swm);
   }
@@ -200,6 +203,7 @@ public class QueriesGenerated extends QueryProviderBase {
     rtqMethods.put("7296792124230788040", new RTQ(1, "graphics"));
     rtqMethods.put("7716362970055158101", new RTQ(2, "red"));
     rtqMethods.put("7296792124230788679", new RTQ(3, "graphics"));
+    rtqMethods.put("1932310415831399264", new RTQ(4, "red"));
   }
   @NotNull
   @Override
@@ -224,6 +228,8 @@ public class QueriesGenerated extends QueryProviderBase {
           return QueriesGenerated.referenceMacro_GetReferent_3_1(ctx);
         case 3:
           return QueriesGenerated.referenceMacro_GetReferent_3_2(ctx);
+        case 4:
+          return QueriesGenerated.referenceMacro_GetReferent_4_0(ctx);
         default:
           throw new GenerationFailureException(String.format("Inconsistent QueriesGenerated: there's no method for query %s (key: #%d)", ctx.getTemplateReference(), methodKey));
       }
